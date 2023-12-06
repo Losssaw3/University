@@ -4,10 +4,10 @@ project(University)
 
 # List your source files excluding demo.cpp
 set(SOURCE_FILES
-/home/losaw3/Desktop/programming/University/Teacher.cpp
-/home/losaw3/Desktop/programming/University/subject.cpp
-/home/losaw3/Desktop/programming/University/student.cpp
-/home/losaw3/Desktop/programming/University/group.cpp
+Teacher.cpp
+subject.cpp
+student.cpp
+group.cpp
 )
 
 # Add executable and include demo.cpp
