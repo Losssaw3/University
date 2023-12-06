@@ -3,6 +3,7 @@
 #include <initializer_list>
 #include <iostream>
 #include <memory>
+#include <string>
 #include <vector>
 
 Group::Group(std::string groupName)
@@ -14,7 +15,12 @@ void Group::addStudent(std::shared_ptr<Student>& student)
 {
     students.emplace_back(student);
     student->setGroup(shared_from_this());
-    std::cout << "Group pointer" << shared_from_this() << '\n';
+}
+
+void Group::setSubject(std::shared_ptr<Subject> subject, std::shared_ptr<Teacher> teacher)
+{
+    subjects.emplace_back(subject);
+    teacher->setGroup(shared_from_this());
 }
 
 std::ostream& operator<<(std::ostream& os,const Group& group)
@@ -41,4 +47,9 @@ void Group::deleteStudent(std::shared_ptr<Student>& student)
         }
     }
     student->setGroup(nullptr);
+}
+
+std::string Group::toString()
+{
+    return groupName;
 }
