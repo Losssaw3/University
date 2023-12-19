@@ -15,6 +15,7 @@ int main()
     gg->addStudent(sharedStudent1);
     std::cout << *gg;
     gg->deleteStudent(sharedStudent2);
+    std::cout<< *gg;
     
 
     Teacher t1("Riadnov Aleksand Vasilievich" , "Doctor");

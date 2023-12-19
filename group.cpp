@@ -14,7 +14,7 @@ Group::Group(std::string groupName)
 void Group::addStudent(std::shared_ptr<Student>& student)
 {
     students.emplace_back(student);
-    student->setGroup(shared_from_this());
+    student->setGroup(shared_from_this()); 
 }
 
 void Group::setSubject(std::shared_ptr<Subject> subject, std::shared_ptr<Teacher> teacher)

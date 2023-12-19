@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <iostream>
 #include <memory>
@@ -51,12 +52,6 @@ class Teacher
          * @return std::ostream& stream which contains teacher object
          */
         friend std::ostream& operator<<(std::ostream& os, const Teacher& teacher);
-
-        /**
-         * @brief function which displays groups taught by Teacher
-         * 
-         */
-        void showGroup();
     
     private:
         
