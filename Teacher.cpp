@@ -24,10 +24,3 @@ std::ostream& operator<<(std::ostream& os, const Teacher& teacher)
 {
     return os << teacher.teacherName;
 }
-
-void Teacher::showGroup()
-{
-    for(auto it = groups.cbegin(); it < groups.cend(); it++)
-    {
-    }
-}
